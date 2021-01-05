@@ -84,6 +84,15 @@
     .proyecto{
         width: 20%;
         margin-bottom: 20px;
+
+    }
+
+    .proyecto .imagen{
+        filter: grayscale(1)
+    }
+
+    .proyecto:hover .imagen{
+        filter: grayscale(0);
     }
 
     .contenido-proyecto p{

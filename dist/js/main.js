@@ -4,12 +4,6 @@
     const responsiveMenu = document.querySelector('.menu-icon');
     const menu = document.querySelector('.menu');
 
-    // Proyectos
-    const proyecto1 = document.querySelector('#proyecto1');
-    const proyecto2 = document.querySelector('#proyecto2');
-    const proyecto3 = document.querySelector('#proyecto3');
-
-
     // Event listeners
     document.addEventListener('DOMContentLoaded', () => {
         
@@ -20,13 +14,7 @@
             
             removerMenu(event);
 
-        } );
-
-        // Proyectos
-        proyecto1.addEventListener('click', () => window.location.href = 'https://github.com/ArizHernandez/P-gina-Restaurante' );
-        proyecto2.addEventListener('click', () => window.location.href = 'https://github.com/ArizHernandez/MacroPeliculas' );
-        proyecto3.addEventListener('click', () => window.location.href = 'https://github.com/ArizHernandez/SpotiApp' );
-
+        });
     })
 
 

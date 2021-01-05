@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css"> 
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px )">
+    <link rel="stylesheet" href="css/desktop.css" media="( min-width: 1024px )">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Icono diseñado por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a> -->
+    <title>Portafolio</title>
+</head>
+<body class="fadeIn">
+    <!-- Header -->
+    <header>
+        <div class="container-header">
+            <nav class="menu">
+                <div class="menu-icon">
+                    <p>Menu</p>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#acercaDe" class="menu-item">
+                            <i class="far fa-user-circle icon"></i> 
+                            Acerca de
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#proyectos" class="menu-item">
+                            <i class="fas fa-tasks icon"></i> 
+                            Proyectos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#conocimiento" class="menu-item">
+                            <i class="fas fa-graduation-cap super-slim icon"></i> 
+                            Habilidades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contactame" class="menu-item">
+                            <i class="fas fa-address-card slim icon"></i>
+                            Contactame
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <h2>Ariz Hernández</h2>
+                    <h3 class="profesion">Desarrollador web</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- acerca de -->
+    <section class="contenedor-acerca" id="acercaDe">
+        <div class="contenedor-foto">
+            <img src="assets/images/foto.jpg" alt="Foto portafolioarz">
+        </div>
+        <div class="contenedor-acerca-info">
+            <h3>Acerca de</h3>
+            <hr>
+            <p>
+                Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo  <span class="bold">19 años</span> y actualmente resido en <span class="bold">Guatemala</span>, me encanta el <span class="bold">desarrollo web</span>, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
+            </p>
+            <p>
+                Hecha un vistazo a mis <a href="#proyectos" rel="noopener noreferrer">proyectos</a> o visita mi <a href="https://github.com/ArizHernandez" rel="noopener noreferrer">github</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="contenedor-proyectos" id="proyectos">
+        <div class="titulo-proyectos">
+            <h3>Proyectos</h3>
+            <hr>
+        </div>
+
+        <div class="proyecto" id="proyecto1">
+            <div class="imagen">
+                <img src="assets/images/proyecto1.png" alt="Restaurante proyectoarz">
+            </div>
+            <div class="contenido-proyecto">
+                <h3>Papa's Restaurant</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Jquery</p>
+            </div>
+        </div>
+
+        <div class="proyecto" id="proyecto2">
+            <div class="imagen">
+                <img src="assets/images/proyecto2.png" alt="Macro peliculas proyectoarz">
+            </div>
+            <div class="contenido-proyecto">
+                <h3>Macro peliculas</h3>
+                <p>Angular</p>
+                <p>Firebase</p>
+                <p>Responsive</p>
+                <p>Angular Material</p>
+            </div>
+        </div>
+
+        <div class="proyecto" id="proyecto3">
+            <div class="imagen">
+                <img src="assets/images/proyecto3.png" alt="Spotiapp proyectoarz">
+            </div>
+            <div class="contenido-proyecto">
+                <h3>SpotiApp</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Jquery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conocimiento -->
+    <section class="contenedor-conocimiento" id="conocimiento">
+
+        <h3>Habilidades</h3>
+        <hr>
+        <div class="tecnologias">
+            <p class="frontend">Angular</p>
+            <p class="frontend">Typescript</p>
+            <p class="frontend">Javascript</p>
+            <p class="frontend">CSS</p>
+            <p class="frontend">SASS</p>
+            <p class="frontend">HTML</p>
+            <p class="frontend">Bootstrap</p>
+            <p class="testing">Cypress <small>(Basico)</small> </p>
+            <p class="testing">Jest <small>(Basico)</small> </p>
+            <p class="db">Firebase</p>        
+            <p class="ui">Figma <small>(Basico)</small> </p>
+            <p class="ui">Adobe Xd <small>(Basico)</small> </p>
+        </div>
+
+    </section>
+
+    <!-- Contactame -->
+    <section class="contactame" id="contactame">
+        <h3>Contactame</h3>
+        <hr>
+        <div class="container-contactame">
+            <a class="github" 
+                href="https://github.com/ArizHernandez"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-github fa-2x"></i>
+                <p>Github</p>
+            </a>
+
+            <a class="linkedin" 
+                href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-linkedin fa-2x"></i>
+                <p>Linkedin</p>
+            </a>
+
+            <a class="instagram" 
+                href="https://www.instagram.com/ariz_hassam/"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-instagram fa-2x"></i> 
+                <p>Instagram</p>
+            </a>
+
+        </div>
+    </section>
+    
+    <!-- Certificados -->
+    <section class="certificados">
+        <h3>Certificados</h3>
+        <hr>
+        <div class="container-certificados">
+
+            <div class="card">
+                <div class="card-container">
+                    <h4>Angular de 0 a experto</h4>
+                    <small>2020 - actual</small>
+                    <a href="https://www.udemy.com/certificate/UC-e8783268-b60c-4fff-a60f-c1a4549f6c6d/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       Ver Certificado
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-container">
+                    <h4>JavaScript Moderno Guía Definitiva</h4>
+                    <small>2020 - actual</small>
+                    <a href="http://ude.my/UC-1E43b5e9-93ed-45b8-9a18-cf452f63d5b8"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver Certificado
+                    </a>
+                </div>
+            </div>
+        
+        <div class="card">
+            <div class="card-container">
+                <h4>Programación básica</h4>
+                <small>2018 - actual</small>
+                <a href="https://platzi.com/p/ArizHer/curso/1050-programacion-basica/diploma/detalle/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   Ver Certificado
+                </a>
+            </div>
+        </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Derechos reservados - Ariz Hernández</p>
+        <div class="redes">
+                <a href="https://github.com/ArizHernandez"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/85800562eb.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

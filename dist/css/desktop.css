@@ -1,0 +1,132 @@
+@media ( min-width: 1024px ){
+
+    h3{
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+
+    /* Estilos Header */
+    header{
+        background-image: url('../assets/images/backgroud-desktop.jpg');
+        height: 500px;
+    }
+
+    .menu{
+        padding-top: 15px;
+    }
+
+    .menu a{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+        
+    .contenedor-texto{
+        padding: 20px 0px;
+    }
+
+    .profesion{
+        width: 95%;
+    }
+
+    .contenedor-texto .texto{
+        padding-bottom: -10px;
+    }
+
+    .contenedor-texto .texto h2{
+        font-weight: 100;
+        font-size: 50px;
+    }
+
+    .contenedor-texto .texto h3{
+        font-size: 28px;
+    }
+
+
+    /* Estilos acerca de */
+    .contenedor-acerca .contenedor-foto{
+        position: relative;
+        width: 160px;
+        top: -100px;
+    }
+
+    .contenedor-acerca-info{
+        top: -120px;
+    }
+
+    .contenedor-acerca-info h3{
+        margin-top: 30px;
+    }
+
+    .contenedor-acerca-info hr{
+        margin-bottom: 20px;
+    }
+
+    .contenedor-acerca-info p{
+        margin-bottom: 5px;
+        line-height: 23px;
+        width: 45%;
+        font-size: 18px;
+    }
+
+    .contenedor-acerca-info p:last-child{
+        margin-bottom: 10px;
+    }
+
+    /* Estilo proyectos */
+    .contenedor-proyectos{
+        margin: 0px auto;
+        margin-top: 300px;
+        justify-content: space-around;
+        max-width: 1300px;
+    }
+
+    .proyecto{
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    .contenido-proyecto p{
+        font-size: 18px;
+    }
+
+    .contenido-proyecto h3{
+        font-size: 25px;
+    }
+
+
+    /* Estilos Conocimiento */
+
+    .contenedor-conocimiento .tecnologias{
+        width: 50%;
+        /* max-width: 1300px; */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    /* Estilos Certificados */
+
+    .card{
+        width: 25%;
+    }
+
+    .card-container h4{
+        font-size: 18px;
+    }
+
+    /* Estilos Footer */
+
+    footer{
+        padding: 20px;  
+        background: linear-gradient(-20deg, #369ea5 0%, #29878D 50%,#369ea5 100% );
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .redes a{
+        margin-right: 10px;
+    }
+}

@@ -51,8 +51,8 @@ header{
     background: transparent;
     display: flex;
     flex-direction: column;
-    transition: all .5s ease-out;
     z-index: 10000;
+    transition: .5s ease;
 }
 
 .menu-icon{
@@ -62,6 +62,7 @@ header{
     margin-top: 5px;
     padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, .2)
 }
 
 .menu-icon p{
@@ -119,6 +120,7 @@ header{
 .menu-activo .menu-icon{
     color: rgba(0, 0, 0, .54);
     background: #fff;
+    box-shadow: none;
 }
     
 .menu-activo .menu-icon i{
@@ -185,7 +187,7 @@ header{
 .contenedor-foto img{
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .7);
     border: 4px solid #fff;
 }
 
@@ -210,12 +212,14 @@ header{
 }
 
 .contenedor-acerca-info p{
+    color: #2D3748;
     width: 98%;
     margin: 0px auto;
     font-weight: 300;
     font-size: 15px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+    line-height: 20px;
 }
 
 .contenedor-acerca-info p:last-child{
@@ -229,18 +233,36 @@ header{
 .contenedor-acerca-info p a{
     font-weight: 400;
     text-decoration: none;
-    color: #0C5268;
+    color: #136c86;
+    position: relative;
 }
 
 .contenedor-acerca-info p a:visited{
-    color: #0C5268;
+    color: #136c86;
+}
+
+.contenedor-acerca-info p span a::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #0af5f4;
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transition: .5s ease;
+}
+
+.contenedor-acerca-info p span a:hover::before{
+    left: 0%;
+    width: 100%;
 }
 
 
 /* Estilos proyectos */
 .contenedor-proyectos{
     padding: 20px;
-    margin-top: 270px;
+    margin-top: 295px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -68,10 +68,33 @@
         width: 45%;
         font-size: 18px;
     }
-
+    
     .contenedor-acerca-info p:last-child{
         margin-bottom: 10px;
     }
+
+    .contenedor-acerca-info p a{
+        position: relative;
+        border-bottom: none;
+    }
+    
+    .contenedor-acerca-info p span a:before{
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: #0af5f4;
+        position: absolute;
+        left: 50%;
+        bottom:0;
+        transition: .5s ease;
+    }
+    
+    .contenedor-acerca-info p span a:hover:before{
+        left: 0%;
+        width: 100%;
+    }
+    
 
     /* Estilo proyectos */
     .contenedor-proyectos{

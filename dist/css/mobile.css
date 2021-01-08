@@ -234,28 +234,11 @@ header{
     font-weight: 400;
     text-decoration: none;
     color: #136c86;
-    position: relative;
+    border-bottom: 2px solid #0af5f4;
 }
 
 .contenedor-acerca-info p a:visited{
     color: #136c86;
-}
-
-.contenedor-acerca-info p span a::before{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: #0af5f4;
-    position: absolute;
-    left: 50%;
-    bottom:0;
-    transition: .5s ease;
-}
-
-.contenedor-acerca-info p span a:hover::before{
-    left: 0%;
-    width: 100%;
 }
 
 
@@ -313,9 +296,20 @@ header{
 .contenido-proyecto h3{
     color: #ccc;
     margin: 20px auto;
-    text-decoration: underline;
+    width: fit-content;
+    position: relative;
 }
 
+.contenido-proyecto h3:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: rgba(255, 255, 255, .6)
+}
 
 .contenido-proyecto p{
     margin-bottom: 3px;

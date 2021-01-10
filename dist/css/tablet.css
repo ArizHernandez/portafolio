@@ -60,11 +60,12 @@
     }
 
     .contenedor-texto .texto h2{
-        font-size: 30px;
+        font-size: 40px;
     }
-
-    .profesion{
+    
+    .contenedor-texto .texto .profesion{
         width: 100%;
+        font-size: 25px;
     }
 
 

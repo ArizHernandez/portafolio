@@ -54,7 +54,7 @@ header{
     display: flex;
     flex-direction: column;
     z-index: 10000;
-    transition: .5s ease;
+    transition: .6s ease;
 }
 
 .menu-icon{
@@ -88,7 +88,7 @@ header{
     margin-top: 20px;
 }
 
-.menu a{
+.menu ul li a{
     margin-top: 20px;
     margin-left: 20px;
     text-decoration: none;
@@ -133,7 +133,24 @@ header{
 .menu-activo ul{    
     height: 100vh;
     padding-left: 0px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-activo ul li{    
+    animation: animation 1s;
+    /* animation-fill-mode: both; */
+}
+
+@keyframes animation{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .menu a:hover{

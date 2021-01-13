@@ -28,6 +28,10 @@ h3{
     font-size: 20px;
 }
 
+hr{
+    border: 1px solid rgb(182, 182, 182);
+}
+
 .fadeIn{
     animation: fadeIn ease 1.6s;
 }

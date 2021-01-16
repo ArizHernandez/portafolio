@@ -2,9 +2,9 @@
 <html lang="es">
     <head>    
     <link rel="stylesheet" href="css/normalize.min.css"> 
-    <link rel="stylesheet" href="css/mobile.min.css">
-    <link rel="stylesheet" href="css/tablet.min.css" media="( min-width: 768px )">
-    <link rel="stylesheet" href="css/desktop.min.css" media="( min-width: 1024px )">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px )">
+    <link rel="stylesheet" href="css/desktop.css" media="( min-width: 1024px )">
     <title>Portafolio - Ariz Hernandez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -23,44 +23,42 @@
 <body class="fadeIn">
     <!-- Header -->
     <header>
-        <div class="container-header">
-            <nav class="menu">
-                <div class="menu-icon">
-                    <p>Menu</p>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#acercaDe" class="menu-item">
-                            <i class="far fa-user-circle icon"></i> 
-                            Acerca de
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#proyectos" class="menu-item">
-                            <i class="fas fa-tasks icon"></i> 
-                            Proyectos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#conocimiento" class="menu-item">
-                            <i class="fas fa-graduation-cap super-slim icon"></i> 
-                            Habilidades
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contactame" class="menu-item">
-                            <i class="fas fa-address-card slim icon"></i>
-                            Contactame
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contenedor-texto">
-                <div class="texto">
-                    <h2>Ariz Hernández</h2>
-                    <h3 class="profesion">Desarrollador web</h3>
-                </div>
+        <nav class="menu">
+            <div class="menu-icon">
+                <p>Menu</p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="#acercaDe" class="menu-item">
+                        <i class="far fa-user-circle icon"></i> 
+                        Acerca de
+                    </a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="menu-item">
+                        <i class="fas fa-briefcase"></i>
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" class="menu-item">
+                        <i class="far fa-handshake super-slim icon"></i>
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactame" class="menu-item">
+                        <i class="far fa-address-card slim icon"></i>
+                        Contactame
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contenedor-texto">
+            <div class="texto">
+                <h2>Ariz Hernández</h2>
+                <h3 class="profesion">Desarrollador web</h3>
             </div>
         </div>
     </header>
@@ -71,8 +69,7 @@
             <img src="assets/images/foto.jpg" alt="Foto portafolioarz">
         </div>
         <div class="contenedor-acerca-info">
-            <h3>Acerca de</h3>
-            <hr>
+            <h3 class="title">Acerca de</h3>
             <p>
                 Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo  <span class="bold">19 años</span> y actualmente resido en <span class="bold">Guatemala</span>, me encanta el <span class="bold">desarrollo web</span>, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
             </p>
@@ -85,93 +82,125 @@
     <!-- Proyectos -->
     <section class="contenedor-proyectos" id="proyectos">
         <div class="titulo-proyectos">
-            <h3>Proyectos</h3>
-            <hr>
+            <h3 class="title">Proyectos</h3>
         </div>
 
-        <!-- Primer proyecto -->
-        <a href="https://github.com/ArizHernandez/P-gina-Restaurante" 
-        class="proyecto" 
-        id="proyecto1"
-        >
-        <div class="imagen">
-                <img src="assets/images/proyecto1.png" alt="Restaurante proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>Papa's Restaurant</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Jquery</p>
-            </div>
-        </a>
-        
-        <!-- Segundo proyecto -->
-        <a href="https://github.com/ArizHernandez/MacroPeliculas" 
-        class="proyecto" 
-           id="proyecto2"
-           >
-           <div class="imagen">
-                <img src="assets/images/proyecto2.png" alt="Macro peliculas proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>Macro peliculas</h3>
-                <p>Angular</p>
-                <p>Firebase</p>
-                <p>Responsive</p>
-                <p>Angular Material</p>
-            </div>
-        </a>
-        
-        <!-- Tercer proyecto -->
-        <a href="https://github.com/ArizHernandez/SpotiApp" 
-        class="proyecto" 
-           id="proyecto3"
-        >
+        <!-- Cards -->
+        <div class="container-cards">
+            <!-- Primer proyecto -->
+            <a href="https://github.com/ArizHernandez/P-gina-Restaurante" 
+                class="proyecto-card" 
+                id="proyecto1"
+            >
             <div class="imagen">
-                <img src="assets/images/proyecto3.png" alt="Spotiapp proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>SpotiApp</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Jquery</p>
-            </div>
-        </a>
+                    <img src="assets/images/proyecto1.png" alt="Restaurante proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Papa's Restaurant</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Jquery</p>
+                </div>
+            </a>
+            
+            <!-- Segundo proyecto -->
+            <a href="https://github.com/ArizHernandez/MacroPeliculas" 
+                class="proyecto-card" 
+                id="proyecto2"
+            >
+                <div class="imagen">
+                    <img src="assets/images/proyecto2.png" alt="Macro peliculas proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Macro peliculas</h3>
+                    <p>Angular</p>
+                    <p>Firebase</p>
+                    <p>Responsive</p>
+                    <p>Angular Material</p>
+                </div>
+            </a>
+            
+            <!-- Tercer proyecto -->
+            <a href="https://github.com/ArizHernandez/SpotiApp" 
+                class="proyecto-card" 
+                id="proyecto3"
+            >
+                <div class="imagen">
+                    <img src="assets/images/proyecto3.png" alt="Spotiapp proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>SpotiApp</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Jquery</p>
+                </div>
+            </a>
+        </div>
+
     </section>
 
-    <!-- Conocimiento -->
-    <section class="contenedor-conocimiento" id="conocimiento">
+    <!-- Servicios -->
+    <section class="contenedor-servicios" id="servicios">
+        <h3 class="title">Servicios</h3>
 
-        <h3>Habilidades</h3>
-        <hr>
-        <div class="tecnologias">
-            <p class="frontend">Angular</p>
-            <p class="frontend">Typescript</p>
-            <p class="frontend">Javascript</p>
-            <p class="frontend">CSS</p>
-            <p class="frontend">SASS</p>
-            <p class="frontend">HTML</p>
-            <p class="frontend">Bootstrap</p>
-            <p class="testing">Cypress <small>(Basico)</small> </p>
-            <p class="testing">Jest <small>(Basico)</small> </p>
-            <p class="db">Firebase</p>        
-            <p class="ui">Figma <small>(Basico)</small> </p>
-            <p class="ui">Adobe Xd <small>(Basico)</small> </p>
+        <div class="contenedor-cards">
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Diseño web</h3>
+                    <p>Puedo prototipar y maquetar tu página web, haciendola interactiva y agradable al usuario.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-mobile-alt"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>Responsive design</h3>
+                    <p>Puedo hacer que tu página web sea adaptable a dispositivos móbiles.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-cogs"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>WPO</h3>
+                    <p>(Web Performance Optimization), puedo optimizar tu página web para obtener un menor tiempo de carga.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-server"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>Web Hosting</h3>
+                    <p>Puedo ayudarte con el hosting y dominio de tu sitio web para que todo mundo pueda desde ya ingresar a el.</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
 
     <!-- Contactame -->
-    <section class="contactame" id="contactame">
-        <h3>Contactame</h3>
-        <hr>
-        <div class="container-contactame">
-            <a class="github" 
-                href="https://github.com/ArizHernandez"
-                rel="noopener noreferrer"
-            >
-                <i class="fab fa-github fa-2x"></i>
-                <p>Github</p>
+    <section class="contenedor-contactame" id="contactame">
+        <h3 class="title">Contactame</h3>
+        <div class="container-cards">
+
+            <a class="whatsapp">
+            <i class="fab fa-whatsapp fa-2x"></i> 
+                <p>Whatsapp <small>+502 33563243</small></p>
+            </a>
+
+            <a class="email">
+                <i class="fas fa-envelope fa-2x"></i> 
+                <p>Correo <small>arishassam@gmail.com</small></p>
             </a>
 
             <a class="linkedin" 
@@ -179,7 +208,7 @@
                 rel="noopener noreferrer"
             >
                 <i class="fab fa-linkedin fa-2x"></i>
-                <p>Linkedin</p>
+                <p>Linkedin <small>Ariz Hassam Hernandez Barahona</small></p>
             </a>
 
             <a class="instagram" 
@@ -187,20 +216,19 @@
                 rel="noopener noreferrer"
             >
                 <i class="fab fa-instagram fa-2x"></i> 
-                <p>Instagram</p>
+                <p>Instagram <small>ariz_hassam</small></p>
             </a>
 
         </div>
     </section>
     
     <!-- Certificados -->
-    <section class="certificados">
-        <h3>Certificados</h3>
-        <hr>
-        <div class="container-certificados">
+    <section class="contenedor-certificados">
+        <h3 class="title">Certificados</h3>
 
+        <div class="container-cards">
             <div class="card">
-                <div class="card-container">
+                <div class="card-info">
                     <h4>Angular de 0 a experto</h4>
                     <small>2020 - actual</small>
                     <a href="https://www.udemy.com/certificate/UC-e8783268-b60c-4fff-a60f-c1a4549f6c6d/"
@@ -212,7 +240,7 @@
             </div>
             
             <div class="card">
-                <div class="card-container">
+                <div class="card-info">
                     <h4>JavaScript Moderno Guía Definitiva</h4>
                     <small>2020 - actual</small>
                     <a href="http://ude.my/UC-1E43b5e9-93ed-45b8-9a18-cf452f63d5b8"
@@ -222,18 +250,18 @@
                     </a>
                 </div>
             </div>
-        
-        <div class="card">
-            <div class="card-container">
-                <h4>Programación básica</h4>
-                <small>2018 - actual</small>
-                <a href="https://platzi.com/p/ArizHer/curso/1050-programacion-basica/diploma/detalle/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Ver Certificado
-                </a>
+            
+            <div class="card">
+                <div class="card-info">
+                    <h4>Programación básica</h4>
+                    <small>2018 - actual</small>
+                    <a href="https://platzi.com/p/ArizHer/curso/1050-programacion-basica/diploma/detalle/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Certificado
+                    </a>
+                </div>
             </div>
-        </div>
             
         </div>
     </section>

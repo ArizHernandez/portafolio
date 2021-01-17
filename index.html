@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="canonical" href="https://arizhernandez.github.io/portafolio/">
-    <link rel="icon" href="https://arizhernandez.github.io/portafolio/assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://arizhernandez.github.io/portafolio/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="https://arizhernandez.github.io/portafolio/favicon.png">
+    <link rel="apple-touch-icon" type="image/png" href="https://arizhernandez.github.io/portafolio/favicon.png">
     <meta name="description" content="Bienvenido a mi portafolio web, soy Ariz Hernandez frontend web developer">
     <meta name="theme-color" content="#5115B1">
     <meta name="twitter:card" content="summary">
@@ -65,28 +65,35 @@
 
     <!-- acerca de -->
     <section class="contenedor-acerca" id="acercaDe">
-        <div class="contenedor-foto">
-            <img src="assets/images/foto.jpg" alt="Foto portafolioarz">
+        <h3 class="title">Acerca de</h3>
+
+        <div class="contenedor-info">
+            <article class="contenedor-foto">
+                <img src="assets/images/foto.jpg" alt="Foto portafolioarz">
+            </article>
+    
+            <article class="contenedor-acerca-info">
+                <h3>¿Quién soy?</h3>
+    
+                <p>
+                    Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo  <span class="bold">19 años</span> y actualmente resido en <span class="bold">Guatemala</span>, me encanta el <span class="bold">desarrollo web</span>, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
+                </p>
+                <p>
+                    Hecha un vistazo a mis <span><a href="#proyectos" rel="noopener noreferrer">proyectos</a> </span> o visita mi <span><a href="https://github.com/ArizHernandez" rel="noopener noreferrer">github</a></span>.
+                </p>
+            </article>
         </div>
-        <div class="contenedor-acerca-info">
-            <h3 class="title">Acerca de</h3>
-            <p>
-                Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo  <span class="bold">19 años</span> y actualmente resido en <span class="bold">Guatemala</span>, me encanta el <span class="bold">desarrollo web</span>, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
-            </p>
-            <p>
-                Hecha un vistazo a mis <span><a href="#proyectos" rel="noopener noreferrer">proyectos</a> </span> o visita mi <span><a href="https://github.com/ArizHernandez" rel="noopener noreferrer">github</a></span>.
-            </p>
-        </div>
+
     </section>
 
     <!-- Proyectos -->
     <section class="contenedor-proyectos" id="proyectos">
-        <div class="titulo-proyectos">
+        <article class="titulo-proyectos">
             <h3 class="title">Proyectos</h3>
-        </div>
+        </article>
 
         <!-- Cards -->
-        <div class="container-cards">
+        <article class="container-cards">
             <!-- Primer proyecto -->
             <a href="https://github.com/ArizHernandez/P-gina-Restaurante" 
                 class="proyecto-card" 
@@ -135,7 +142,7 @@
                     <p>Jquery</p>
                 </div>
             </a>
-        </div>
+        </article>
 
     </section>
 

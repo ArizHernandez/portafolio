@@ -9,10 +9,7 @@
     /* Estilos header */
 
     header{
-        background-image: url('../assets/images/backgroud-table.jpg');
-        height: 350px;
-        width: 100%;
-
+        background-image: url('../assets/images/backgroud.jpg');
         // Menu Style
         .menu{
             padding-top: 10px;
@@ -55,8 +52,6 @@
         
         // Text style
         .contenedor-texto{
-            position: static;
-            height: 80%;
             .texto{
                 z-index: 100;
                 h2{
@@ -73,33 +68,37 @@
 
     /* Estilos acerca de */
     .contenedor-acerca{
-        .contenedor-foto{
-            width: 140px;
-            top: -70px !important;
+        h3{
+            margin-bottom: 10px;
         }
-        .contenedor-acerca-info{
-            top: -125px;
-            h3{
-                margin-top: 45px;
-                margin-bottom: 15px;
+        .contenedor-info{
+            width: 90%;
+            margin: auto;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 30px;
+            .contenedor-foto{
+                width: 45%;
             }
-            p{
-                margin: 0px auto;
-                margin-bottom: 8px;
-                width: 74%;
-                font-size: 16px;
-                &:last-child{
-                    margin-bottom: 10px;
+            .contenedor-acerca-info{
+                width: 55%;
+                p{
+                    margin: 0px auto;
+                    margin-bottom: 8px;
+                    width: 90%;
+                    font-size: 16px;
+                    &:last-child{
+                        margin-bottom: 10px;
+                    }
                 }
+                
             }
-            
         }
     }
 
 
     /* Estilos proyectos */
     .contenedor-proyectos{
-        margin-top: 260px;
         padding-bottom: 40px;
         .titulo-proyectos{
             h3{

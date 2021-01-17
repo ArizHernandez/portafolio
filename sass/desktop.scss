@@ -1,10 +1,8 @@
 @media ( min-width: 1024px ){
 
-
     /* Estilos Header */
     header{
-        background-image: url('../assets/images/backgroud-desktop.jpg');
-        height: 500px;
+        background-image: url('../assets/images/backgroud.jpg');
         .menu{
             padding-top: 15px;
             ul{
@@ -33,7 +31,7 @@
             }
         }
         .contenedor-texto{
-            padding: 20px 0px;
+            top: 30%;
             .texto{
                 padding-bottom: -10px;
                 h2{
@@ -51,55 +49,52 @@
 
     /* Estilos acerca de */
     .contenedor-acerca {
-        .contenedor-foto{
-            position: relative;
-            width: 175px;
-            top: -105px !important;
-        }
-        .contenedor-acerca-info{
-            top: -150px;
-            h3{
-                margin-top: 30px;
+        .contenedor-info{
+            .contenedor-foto{
+                width: 35%;
             }
-            p{
-                margin-bottom: 15px;
-                line-height: 23px;
-                width: 50%;
-                font-size: 1.08em;
-                &:last-child{
-                    margin-bottom: 10px;
+            .contenedor-acerca-info{
+                width: 65%;
+                h3{
+                    font-size: 1.5em;
                 }
-                a{
-                    position: relative;
-                    border-bottom: none;
-                    &:before{
-                        content: "";
-                        display: block;
-                        width: 0%;
-                        height: 2px;
-                        background: #0af5f4;
-                        position: absolute;
-                        left: 50%;
-                        bottom:0;
-                        transition: .5s ease;
+                p{
+                    margin-bottom: 15px;
+                    line-height: 23px;
+                    width: 80%;
+                    font-size: 1.08em;
+                    &:last-child{
+                        margin-bottom: 10px;
                     }
-                    &:hover{
+                    a{
+                        position: relative;
+                        border-bottom: none;
                         &:before{
-                            left: 0%;
-                            width: 100%;
+                            content: "";
+                            display: block;
+                            width: 0%;
+                            height: 2px;
+                            background: #0af5f4;
+                            position: absolute;
+                            left: 50%;
+                            bottom:0;
+                            transition: .5s ease;
+                        }
+                        &:hover{
+                            &:before{
+                                left: 0%;
+                                width: 100%;
+                            }
                         }
                     }
-                }
+                }   
             }
-            
         }
     }
 
 
     /* Estilo proyectos */
     .contenedor-proyectos{
-        margin: 0px auto;
-        margin-top: 300px;
         .container-cards{
             justify-content: space-around;
             .proyecto-card{

@@ -2,205 +2,293 @@
 <html lang="es">
     <head>    
     <link rel="stylesheet" href="css/normalize.min.css"> 
-    <link rel="stylesheet" href="css/mobile.min.css">
-    <link rel="stylesheet" href="css/tablet.min.css" media="( min-width: 768px )">
-    <link rel="stylesheet" href="css/desktop.min.css" media="( min-width: 1024px )">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px )">
+    <link rel="stylesheet" href="css/desktop.css" media="( min-width: 1024px )">
     <title>Portafolio - Ariz Hernandez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="canonical" href="https://arizhernandez.github.io/portafolio/">
-    <link rel="icon" href="https://arizhernandez.github.io/portafolio/assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://arizhernandez.github.io/portafolio/assets/images/favicon.ico">
+    <link rel="icon" href="https://arizhernandez.github.io/portafolio/favicon.png">
+    <link rel="apple-touch-icon" href="https://arizhernandez.github.io/portafolio/favicon.png">
     <meta name="description" content="Bienvenido a mi portafolio web, soy Ariz Hernandez frontend web developer">
     <meta name="theme-color" content="#5115B1">
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:title" name="twitter:title" content="Portafolio - Ariz Hernandez">
     <meta property="og:image" name="twitter:image" content="https://arizhernandez.github.io/portafolio/assets/images/foto.jpg">
-    <meta property="og:url" name="twitter:url" content="https://arizhernandez.github.io/portafolio">
+    <meta property="og:url" name="twitter:url" content="https://arizhernandez.github.io/portafolio/">
     <meta property="og:description" name="twitter:description" content="Bienvenido a mi portafolio web, soy Ariz Hernandez frontend web developer">
+
+    <style type="text/css">
+        html{scroll-behavior:smooth}body{font-family:Roboto,sans-serif;background-color:#1c1c1c}h3{font-weight:400;font-size:1.3em}.title{box-sizing:border-box;margin:auto;padding:2px 6px;width:fit-content;width:-webkit-fit-content;width:-moz-fit-content;border-bottom:2px solid #5115b1}
+    </style>
+
 </head>
 <body class="fadeIn">
     <!-- Header -->
     <header>
-        <div class="container-header">
-            <nav class="menu">
-                <div class="menu-icon">
-                    <p>Menu</p>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#acercaDe" class="menu-item">
-                            <i class="far fa-user-circle icon"></i> 
-                            Acerca de
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#proyectos" class="menu-item">
-                            <i class="fas fa-tasks icon"></i> 
-                            Proyectos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#conocimiento" class="menu-item">
-                            <i class="fas fa-graduation-cap super-slim icon"></i> 
-                            Habilidades
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contactame" class="menu-item">
-                            <i class="fas fa-address-card slim icon"></i>
-                            Contactame
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contenedor-texto">
-                <div class="texto">
-                    <h2>Ariz Hernández</h2>
-                    <h3 class="profesion">Desarrollador web</h3>
-                </div>
+        <nav class="menu">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="#acercaDe" class="menu-item">
+                        <i class="far fa-user-circle icon"></i> 
+                        Acerca de
+                    </a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="menu-item">
+                        <i class="fas fa-briefcase icon"></i>
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" class="menu-item">
+                        <i class="far fa-handshake super-slim icon"></i>
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactame" class="menu-item">
+                        <i class="far fa-address-card slim icon"></i>
+                        Contactame
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contenedor-texto">
+            <div class="texto">
+                <h2>Ariz Hernández</h2>
+                <h3 class="profesion">Desarrollador web</h3>
             </div>
         </div>
     </header>
 
     <!-- acerca de -->
-    <section class="contenedor-acerca" id="acercaDe">
-        <div class="contenedor-foto">
-            <img src="assets/images/foto.jpg" alt="Foto portafolioarz">
+    <section class="contenedor acerca" id="acercaDe">
+        <h3 class="title">Acerca de</h3>
+
+        <div class="contenedor-info">
+            <article class="contenedor-foto">
+                <img data-src="assets/images/foto.jpg" class="lazyload" alt="Foto portafolioarz">
+                <div class="tecnologias">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-angular"></i>
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </article>
+    
+            <article class="contenedor-acerca-info">
+                <h3>¿Quién soy?</h3>
+    
+                <p>
+                    Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo 20 años y actualmente resido en <span class="bold">Guatemala</span>, me encanta el desarrollo web, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
+                </p>
+                <p>
+                    Hecha un vistazo a mis <span><a href="#proyectos" class="link" rel="noopener noreferrer">proyectos</a> </span> o visita mi <span><a href="https://github.com/ArizHernandez" class="link" target="_blank" rel="noopener noreferrer">github</a></span>.
+                    <a href="assets/shared/cv.pdf" 
+                       target="_blank"
+                       class="button"
+                    >
+                    DESCARGA MI CV
+                    </a>
+                </p>
+            </article>
         </div>
-        <div class="contenedor-acerca-info">
-            <h3>Acerca de</h3>
-            <hr>
-            <p>
-                Mi nombre es <span class="bold">Ariz Hassam Hernández Barahona</span>, tengo  <span class="bold">19 años</span> y actualmente resido en <span class="bold">Guatemala</span>, me encanta el <span class="bold">desarrollo web</span>, siempre hay algo nuevo que aprendo cada dia, mi fuerte es el <span class="bold">frontend</span> con <span class="bold">angular</span>. 
-            </p>
-            <p>
-                Hecha un vistazo a mis <span><a href="#proyectos" rel="noopener noreferrer">proyectos</a> </span> o visita mi <span><a href="https://github.com/ArizHernandez" rel="noopener noreferrer">github</a></span>.
-            </p>
-        </div>
+
     </section>
 
     <!-- Proyectos -->
-    <section class="contenedor-proyectos" id="proyectos">
-        <div class="titulo-proyectos">
-            <h3>Proyectos</h3>
-            <hr>
-        </div>
+    <section class="contenedor proyectos" id="proyectos">
+        <article class="titulo-proyectos">
+            <h3 class="title">Proyectos</h3>
+        </article>
 
-        <!-- Primer proyecto -->
-        <a href="https://github.com/ArizHernandez/P-gina-Restaurante" 
-        class="proyecto" 
-        id="proyecto1"
-        >
-        <div class="imagen">
-                <img src="assets/images/proyecto1.png" alt="Restaurante proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>Papa's Restaurant</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Jquery</p>
-            </div>
-        </a>
-        
-        <!-- Segundo proyecto -->
-        <a href="https://github.com/ArizHernandez/MacroPeliculas" 
-        class="proyecto" 
-           id="proyecto2"
-           >
-           <div class="imagen">
-                <img src="assets/images/proyecto2.png" alt="Macro peliculas proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>Macro peliculas</h3>
-                <p>Angular</p>
-                <p>Firebase</p>
-                <p>Responsive</p>
-                <p>Angular Material</p>
-            </div>
-        </a>
-        
-        <!-- Tercer proyecto -->
-        <a href="https://github.com/ArizHernandez/SpotiApp" 
-        class="proyecto" 
-           id="proyecto3"
-        >
+        <!-- Cards -->
+        <article class="container-cards">
+            <!-- Primer proyecto -->
+            <a href="https://github.com/ArizHernandez/P-gina-Restaurante"
+               target="_blank"
+               rel="noopener noreferrer" 
+               class="proyecto-card" 
+               id="proyecto1"
+            >
             <div class="imagen">
-                <img src="assets/images/proyecto3.png" alt="Spotiapp proyectoarz">
-            </div>
-            <div class="contenido-proyecto">
-                <h3>SpotiApp</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Jquery</p>
-            </div>
-        </a>
+                    <img data-src="assets/images/proyecto1.jpg" class="lazyload" alt="Restaurante proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Papa's Restaurant</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Jquery</p>
+                </div>
+            </a>
+            
+            <!-- Segundo proyecto -->
+            <a href="https://github.com/ArizHernandez/MacroPeliculas" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="proyecto-card" 
+               id="proyecto2"
+            >
+                <div class="imagen">
+                    <img data-src="assets/images/proyecto2.jpg" class="lazyload" alt="Macro peliculas proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Macro peliculas</h3>
+                    <p>Angular</p>
+                    <p>Firebase</p>
+                    <p>Responsive</p>
+                    <p>Angular Material</p>
+                </div>
+            </a>
+            
+            <!-- Tercer proyecto -->
+            <a href="https://github.com/ArizHernandez/SpotiApp" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="proyecto-card" 
+               id="proyecto3"
+            >
+                <div class="imagen">
+                    <img data-src="assets/images/proyecto3.jpg" class="lazyload" alt="Spotiapp proyectoarz">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>SpotiApp</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Jquery</p>
+                </div>
+            </a>
+        </article>
+
     </section>
 
-    <!-- Conocimiento -->
-    <section class="contenedor-conocimiento" id="conocimiento">
+    <!-- Servicios -->
+    <section class="contenedor servicios" id="servicios">
+        <h3 class="title">Servicios</h3>
 
-        <h3>Habilidades</h3>
-        <hr>
-        <div class="tecnologias">
-            <p class="frontend">Angular</p>
-            <p class="frontend">Typescript</p>
-            <p class="frontend">Javascript</p>
-            <p class="frontend">CSS</p>
-            <p class="frontend">SASS</p>
-            <p class="frontend">HTML</p>
-            <p class="frontend">Bootstrap</p>
-            <p class="testing">Cypress <small>(Basico)</small> </p>
-            <p class="testing">Jest <small>(Basico)</small> </p>
-            <p class="db">Firebase</p>        
-            <p class="ui">Figma <small>(Basico)</small> </p>
-            <p class="ui">Adobe Xd <small>(Basico)</small> </p>
+        <div class="contenedor-cards">
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="card-info">
+                    <h3>Diseño Web</h3>
+                    <p>Creó prototipos y maquetación de tu página web, haciéndola interactiva y agradable al usuario.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-mobile-alt"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>Responsive Design</h3>
+                    <p>Diseño tu página web para que sea adaptable a dispositivos móviles.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-cogs"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>WPO</h3>
+                    <p>(Web Performance Optimization). Optimizo tu página web para obtener un menor tiempo de carga.</p>
+                </div>
+            </div>
+
+            <div class="card-habilidades">
+                <div class="icono">
+                    <i class="fas fa-server"></i>                
+                </div>
+                <div class="card-info">
+                    <h3>Web Hosting</h3>
+                    <p>Puedo ayudarte con el hosting y dominio de tu sitio web para que todo mundo pueda desde ya ingresar a el.</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
 
     <!-- Contactame -->
-    <section class="contactame" id="contactame">
-        <h3>Contactame</h3>
-        <hr>
-        <div class="container-contactame">
-            <a class="github" 
-                href="https://github.com/ArizHernandez"
-                rel="noopener noreferrer"
-            >
-                <i class="fab fa-github fa-2x"></i>
-                <p>Github</p>
-            </a>
+    <section class="contenedor contactame" id="contactame">
+        <h3 class="title">Contáctame</h3>
+
+        <div class="formulario">
+            <form id="form" autocomplete="off">
+                
+                <div class="form-input">
+                    <label for="Nombre"> <small>Nombre:</small> </label>
+                    <input type="text" id="Nombre" name="name" minlength="3" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="form-input">
+                    <label for="Email"> <small>Email:</small> </label>
+                    <input type="email" id="Email" name="email" minlength="3" placeholder="Ingresa tu correo" pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'>    
+                </div>
+
+                <div class="form-input">
+                    <label for="Mensaje"> <small>Mensaje:</small> </label>
+                    <textarea id="Mensaje" name="message" minlength="3" placeholder="Ingresa tu mensaje"></textarea>
+                </div>
+
+                <button type="submit" id="enviar"> Enviar </button>                    
+                
+                <div id="respuesta"></div>
+            </form>
+        </div>
+
+        <div class="container-cards">
 
             <a class="linkedin" 
-                href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
-                rel="noopener noreferrer"
+               href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
+               target="_blank"
+               rel="noopener noreferrer"
             >
                 <i class="fab fa-linkedin fa-2x"></i>
-                <p>Linkedin</p>
+                <p>Linkedin <small>Ariz Hernández</small></p>
+            </a>
+        
+            <a class="github" 
+               href="https://github.com/ArizHernandez"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+                <i class="fab fa-github fa-2x"></i>
+                <p>Github <small>Ariz Hernandez</small></p>
             </a>
 
             <a class="instagram" 
-                href="https://www.instagram.com/ariz_hassam/"
-                rel="noopener noreferrer"
+               href="https://www.instagram.com/ariz_hassam/"
+               target="_blank"
+               rel="noopener noreferrer"
             >
                 <i class="fab fa-instagram fa-2x"></i> 
-                <p>Instagram</p>
+                <p>Instagram <small>@ariz_hassam</small></p>
             </a>
 
         </div>
+
     </section>
     
     <!-- Certificados -->
-    <section class="certificados">
-        <h3>Certificados</h3>
-        <hr>
-        <div class="container-certificados">
+    <section class="contenedor certificados">
+        <h3 class="title">Certificados</h3>
 
+        <div class="container-cards">
             <div class="card">
-                <div class="card-container">
+                <div class="card-info">
                     <h4>Angular de 0 a experto</h4>
                     <small>2020 - actual</small>
                     <a href="https://www.udemy.com/certificate/UC-e8783268-b60c-4fff-a60f-c1a4549f6c6d/"
@@ -212,7 +300,7 @@
             </div>
             
             <div class="card">
-                <div class="card-container">
+                <div class="card-info">
                     <h4>JavaScript Moderno Guía Definitiva</h4>
                     <small>2020 - actual</small>
                     <a href="http://ude.my/UC-1E43b5e9-93ed-45b8-9a18-cf452f63d5b8"
@@ -222,31 +310,35 @@
                     </a>
                 </div>
             </div>
-        
-        <div class="card">
-            <div class="card-container">
-                <h4>Programación básica</h4>
-                <small>2018 - actual</small>
-                <a href="https://platzi.com/p/ArizHer/curso/1050-programacion-basica/diploma/detalle/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                   Ver Certificado
-                </a>
+            
+            <div class="card">
+                <div class="card-info">
+                    <h4>Programación básica</h4>
+                    <small>2018 - actual</small>
+                    <a href="https://platzi.com/p/ArizHer/curso/1050-programacion-basica/diploma/detalle/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Certificado
+                    </a>
+                </div>
             </div>
-        </div>
             
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Derechos reservados - Ariz Hernández</p>
+        <p>&copy; Derechos reservados - Ariz Hernández </p>
         <div class="redes">
                 <a href="https://github.com/ArizHernandez"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    name="github">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    name="linkedin">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -256,6 +348,7 @@
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/85800562eb.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/lazysizes.min.js" async></script>
 </body>
 </html>

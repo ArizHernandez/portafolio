@@ -17,10 +17,6 @@ body{
 
 /* Estilos header */
 header{
-    background-image: url('../assets/images/backgroud.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
     position: relative;
     &:before{
@@ -146,7 +142,6 @@ header{
                 text-align: center;
                 font-weight: 300;
                 font-size: 3rem;
-                font-family: 'Lobster Two', cursive;
                 font-style: italic;
             }
         }

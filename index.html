@@ -2,15 +2,43 @@
 <html lang="es">
     <head>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css" media="( min-width: 768px )">
-    <link rel="stylesheet" href="css/desktop.css" media="( min-width: 1024px )">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+
+    <link rel="preconnect" href="https://kit.fontawesome.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com/">
+
+    <!-- Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="css/mobile.css" 
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        media="screen and ( min-width: 768px )"
+    />
+    <link 
+        rel="stylesheet" 
+        href="css/tablet.css" 
+        media="screen and ( min-width: 768px )" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="css/desktop.css" 
+        media="screen and ( min-width: 1024px )"
+    />
+    <style type="text/css">
+        html{scroll-behavior:smooth}body{font-family:Roboto,sans-serif;background-color:#1c1c1c}h3{font-weight:400;font-size:1.3em}.title{box-sizing:border-box;margin:auto;padding:2px 6px;width:fit-content;width:-webkit-fit-content;width:-moz-fit-content;border-bottom:2px solid #5115b1}
+    </style>
+    
     <title>Portafolio - Ariz Hernandez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+
+    <!-- SEO -->
     <link rel="canonical" href="https://arizhernandez.github.io/portafolio/">
     <link rel="icon" href="https://arizhernandez.github.io/portafolio/favicon.png">
     <link rel="apple-touch-icon" href="https://arizhernandez.github.io/portafolio/favicon.png">
@@ -22,11 +50,16 @@
     <meta property="og:image" name="twitter:image" content="https://arizhernandez.github.io/portafolio/assets/images/foto.jpg">
     <meta property="og:url" name="twitter:url" content="https://arizhernandez.github.io/portafolio/">
     <meta property="og:description" name="twitter:description" content="Bienvenido a mi portafolio web, soy Ariz Hernandez frontend web developer">
-    <link rel="stylesheet" href="css/animate.css">
-    <style type="text/css">
-        html{scroll-behavior:smooth}body{font-family:Roboto,sans-serif;background-color:#1c1c1c}h3{font-weight:400;font-size:1.3em}.title{box-sizing:border-box;margin:auto;padding:2px 6px;width:fit-content;width:-webkit-fit-content;width:-moz-fit-content;border-bottom:2px solid #5115b1}
-    </style>
 
+    <!-- Scripts -->
+    <script async src="https://kit.fontawesome.com/85800562eb.js" crossorigin="anonymous"></script>
+    <script async src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({ mobile: false });
+
+        wow.init();
+    </script>
 </head>
 <body class="fadeIn">
     <!-- Header -->
@@ -76,7 +109,7 @@
 
         <div class="contenedor-info">
             <article class="contenedor-foto">
-                <img data-src="assets/images/foto.jpg" class="lazyload" alt="Foto portafolioarz">
+                <img src="assets/images/foto.jpg" loading="lazy" alt="Foto portafolioarz">
                 <div class="tecnologias">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
@@ -118,11 +151,11 @@
             <a href="https://github.com/ArizHernandez/P-gina-Restaurante"
                target="_blank"
                rel="noopener noreferrer"
-               class="proyecto-card wow bounceInLeft"
+               class="proyecto-card wow animate__animated animate__bounceInLeft"
                id="proyecto1"
             >
             <div class="imagen">
-                    <img data-src="assets/images/proyecto1.jpg" class="lazyload" alt="Restaurante proyectoarz">
+                    <img src="assets/images/proyecto1.jpg" loading="lazy" alt="Restaurante proyectoarz">
                 </div>
                 <div class="contenido-proyecto">
                     <h3>Papa's Restaurant</h3>
@@ -136,11 +169,11 @@
             <a href="https://github.com/ArizHernandez/MacroPeliculas"
                target="_blank"
                rel="noopener noreferrer"
-               class="proyecto-card wow bounceIn"
+               class="proyecto-card wow animate__animated animate__bounceIn"
                id="proyecto2"
             >
                 <div class="imagen">
-                    <img data-src="assets/images/proyecto2.jpg" class="lazyload" alt="Macro peliculas proyectoarz">
+                    <img src="assets/images/proyecto2.jpg" loading="lazy" alt="Macro peliculas proyectoarz">
                 </div>
                 <div class="contenido-proyecto ">
                     <h3>Macro peliculas</h3>
@@ -155,11 +188,11 @@
             <a href="https://github.com/ArizHernandez/SpotiApp"
                target="_blank"
                rel="noopener noreferrer"
-               class="proyecto-card wow bounceInRight"
+               class="proyecto-card wow animate__animated animate__bounceInRight"
                id="proyecto3"
             >
                 <div class="imagen">
-                    <img data-src="assets/images/proyecto3.jpg" class="lazyload" alt="Spotiapp proyectoarz">
+                    <img src="assets/images/proyecto3.jpg" loading="lazy" alt="Spotiapp proyectoarz">
                 </div>
                 <div class="contenido-proyecto">
                     <h3>SpotiApp</h3>
@@ -225,7 +258,7 @@
     <section class="contenedor contactame" id="contactame">
         <h3 class="title">Contáctame</h3>
 
-        <div class="formulario wow fadeInDown">
+        <div class="formulario wow animate__animated animate__fadeIn">
             <form id="form" autocomplete="off">
 
                 <div class="form-input">
@@ -251,7 +284,7 @@
 
         <div class="container-cards">
 
-            <a class="linkedin wow fadeInDown"
+            <a class="linkedin wow animate__animated animate__fadeInDown"
                href="https://www.linkedin.com/in/ariz-hernandez-b438071b4/"
                target="_blank"
                rel="noopener noreferrer"
@@ -260,7 +293,7 @@
                 <p>Linkedin <small>Ariz Hernández</small></p>
             </a>
 
-            <a class="github wow fadeInDown"
+            <a class="github wow animate__animated animate__fadeInDown"
                data-wow-delay=".25s"
                href="https://github.com/ArizHernandez"
                target="_blank"
@@ -270,7 +303,7 @@
                 <p>Github <small>Ariz Hernandez</small></p>
             </a>
 
-            <a class="instagram wow fadeInDown"
+            <a class="instagram wow animate__animated animate__fadeInDown"
                data-wow-delay=".35s"
                href="https://www.instagram.com/ariz_hassam/"
                target="_blank"
@@ -346,17 +379,5 @@
                 </a>
         </div>
     </footer>
-
-
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/85800562eb.js" crossorigin="anonymous"></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/lazysizes.min.js" async></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        wow = new WOW({ mobile: false });
-
-        wow.init();
-    </script>
 </body>
 </html>

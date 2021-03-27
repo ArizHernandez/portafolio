@@ -4,19 +4,13 @@
     // menu
     const responsiveMenu = document.querySelector('.menu-icon');
     const menu = document.querySelector('.menu');
-
-    // Event listeners
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        // menu
-        responsiveMenu.addEventListener('click', () => menu.classList.toggle('menu-activo') );
-        
-        menu.addEventListener('click', event => {
-            
-            removerMenu(event);
-
-        });
-    })
+    // Event listeners    
+    // menu
+    responsiveMenu.addEventListener('click', () => menu.classList.toggle('menu-activo') );
+    
+    menu.addEventListener('click', event => {
+        removerMenu(event);
+    });
 
 
     // funciones

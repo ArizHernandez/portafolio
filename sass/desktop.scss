@@ -1,204 +1,201 @@
-@media ( min-width: 1024px ){
-
-    /* Estilos Header */
-    header{
-        .menu{
-            padding-top: 15px;
-            ul{
-                li{
-                    a{
-                        margin-right: 20px;
-                        font-size: 20px;
-                        position: relative;
-                        &:before{
-                            content: "";
-                            width: 0%;
-                            height: 2px;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            background: rgba(#5115B1, .75);
-                            transition: .5s ease;
-                        }
-                        &:hover{
-                            &:before{
-                                width: 100%;
-                            }
-                        }
+/* Estilos Header */
+header{
+    .menu{
+        padding-top: 15px;
+        ul{
+            li{
+                a{
+                    margin-right: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        width: 0%;
+                        height: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: rgba(#5115B1, .75);
+                        transition: .5s ease;
                     }
-                }
-            }
-        }
-        .contenedor-texto{
-            top: 30%;
-            .texto{
-                padding-bottom: -10px;
-                h2{
-                    font-weight: 100;
-                }
-                .profesion{
-                    width: 95%;
-                }
-            }
-        }
-    }
-        
-
-    /* Estilos acerca de */
-    .acerca {
-        .contenedor-info{
-            .contenedor-foto{
-                width: 35%;
-                .tecnologias{
-                    i{
-                        &:hover{
-                            color: rgb(#0D59BD, .80)
-                        }
-                    }
-                }
-            }
-            .contenedor-acerca-info{
-                width: 65%;
-                h3{
-                    font-size: 1.5em;
-                }
-                p{
-                    margin-bottom: 10px;
-                    line-height: 23px;
-                    width: 80%;
-                    font-size: 1.08em;
-                    .link{
-                        position: relative;
-                        border-bottom: none;
-                        &:before{
-                            content: "";
-                            display: block;
-                            width: 0%;
-                            height: 2px;
-                            background: #045DD4;
-                            position: absolute;
-                            left: 50%;
-                            bottom:0;
-                            transition: .5s ease;
-                        }
-                        &:hover{
-                            &:before{
-                                left: 0%;
-                                width: 100%;
-                            }
-                        }
-                    }
-                    .button{
-                        margin-top: 25px;
-                        transition: .4s ease;
-                        &:hover{
-                            opacity: .8;
-                        }
-                    }
-                }   
-            }
-        }
-    }
-
-
-    /* Estilo proyectos */
-    .proyectos{
-        .container-cards{
-            justify-content: space-around;
-            .proyecto-card{
-                width: 20%;
-                margin-bottom: 20px;
-                .imagen{
-                    filter: grayscale(1);
-                    transition: .4s ease;
-                }
-                &:hover{
-                    transform: translateY(-10px);
-                    .imagen{
-                        filter: grayscale(0);
-                    }
-                }
-                .contenido-proyecto{
-                    p{
-                        font-size: 18px;
-                    }
-                } 
-            }
-        }
-    }
-
-
-    /* Estilos Servicios */
-    .servicios{
-        .contenedor-cards{
-            .card-habilidades{
-                width: 35%;
-                .card-info{
-                    p{
-                        box-sizing: border-box;
-                        padding: 0px 35px;
-                    }
-                }
-            }
-        }
-    } 
-
-    // Estilos contactame
-    .contactame{
-        .formulario{
-            max-width: 38%;
-            form{
-                .form-input{
-                    width: 48%;
-                    small{
-                        font-size: .84em;
-                    }
-                    textarea{
-                        min-height: 200px;
-                        max-height: 250px;
-                    }
-                }
-                button{
-                    cursor: pointer;
                     &:hover{
-                        opacity: .90;
+                        &:before{
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
-        .container-cards{
-            a{
+    }
+    .contenedor-texto{
+        top: 25%;
+        .texto{
+            padding-bottom: -10px;
+            h2{
+                font-weight: 100;
+            }
+            .profesion{
+                width: 95%;
+            }
+        }
+    }
+}
+    
+
+/* Estilos acerca de */
+.acerca {
+    .contenedor-info{
+        .contenedor-foto{
+            width: 35%;
+            .tecnologias{
                 i{
-                    font-size: 2.4em;
-                    margin-bottom: 5px;
+                    &:hover{
+                        color: rgb(#0D59BD, .80)
+                    }
                 }
             }
-
+        }
+        .contenedor-acerca-info{
+            width: 65%;
+            h3{
+                font-size: 1.5em;
+            }
+            p{
+                margin-bottom: 10px;
+                line-height: 23px;
+                width: 80%;
+                font-size: 1.08em;
+                .link{
+                    position: relative;
+                    border-bottom: none;
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 0%;
+                        height: 2px;
+                        background: #045DD4;
+                        position: absolute;
+                        left: 50%;
+                        bottom:0;
+                        transition: .5s ease;
+                    }
+                    &:hover{
+                        &:before{
+                            left: 0%;
+                            width: 100%;
+                        }
+                    }
+                }
+                .button{
+                    margin-top: 25px;
+                    transition: .4s ease;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }   
         }
     }
+}
 
-    /* Estilos Certificados */
-    .certificados{
-        .container-cards{
-            padding: 20px 0px;
-            .card{
-                width: 25%;
 
+/* Estilo proyectos */
+.proyectos{
+    .container-cards{
+        justify-content: space-around;
+        .proyecto-card{
+            width: 20%;
+            margin-bottom: 20px;
+            .imagen{
+                filter: grayscale(1);
+                transition: .4s ease;
+            }
+            &:hover{
+                transform: translateY(-10px);
+                .imagen{
+                    filter: grayscale(0);
+                }
+            }
+            .contenido-proyecto{
+                p{
+                    font-size: 18px;
+                }
+            } 
+        }
+    }
+}
+
+
+/* Estilos Servicios */
+.servicios{
+    .contenedor-cards{
+        .card-habilidades{
+            width: 35%;
+            .card-info{
+                p{
+                    box-sizing: border-box;
+                    padding: 0px 35px;
+                }
             }
         }
     }
+} 
 
-    /* Estilos Footer */
-    footer{
-        padding: 20px;  
-        background: linear-gradient(-20deg, #369ea5 0%, #29878D 50%,#369ea5 100% );
+// Estilos contactame
+.contactame{
+    .formulario{
+        max-width: 38%;
+        form{
+            .form-input{
+                width: 48%;
+                small{
+                    font-size: .84em;
+                }
+                textarea{
+                    min-height: 200px;
+                    max-height: 250px;
+                }
+            }
+            button{
+                cursor: pointer;
+                &:hover{
+                    opacity: .90;
+                }
+            }
+        }
     }
+    .container-cards{
+        a{
+            i{
+                font-size: 2.4em;
+                margin-bottom: 5px;
+            }
+        }
 
-    footer p{
-        font-size: 18px;
     }
+}
 
-    .redes a{
-        margin-right: 10px;
+/* Estilos Certificados */
+.certificados{
+    .container-cards{
+        padding: 20px 0px;
+        .card{
+            width: 25%;
+
+        }
     }
+}
+
+/* Estilos Footer */
+footer{
+    padding: 20px;  
+    background: linear-gradient(-20deg, #369ea5 0%, #29878D 50%,#369ea5 100% );
+}
+
+footer p{
+    font-size: 18px;
+}
+
+.redes a{
+    margin-right: 10px;
 }

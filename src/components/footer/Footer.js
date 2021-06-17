@@ -66,7 +66,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer__message-container">
-          <p className="footer__message">Maded with <span style={{color:"red"}}>❤</span> by Ariz Hernández - 2021&copy;</p>
+          <p className="footer__message">Made with <span style={{color:"red"}}>❤</span> by Ariz Hernández - 2021&copy;</p>
           <p>
             <a 
               href="https://github.com/ArizHernandez/portafolio" 

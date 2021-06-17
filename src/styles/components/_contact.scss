@@ -1,0 +1,110 @@
+.contact__main-container{
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.contact__form-container{
+  background-image: url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623810892/guillaume-le-louarn-uC21aXJ7yQs-unsplash_1_lpz9sv.jpg");
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px $dark-gray;
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-group{
+  text-align: initial;
+}
+
+.form__group-input-container{
+  position: relative;
+}
+
+.form__group-label{
+  color: white;
+}
+
+.form__group-input{
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: rgba($color: white, $alpha: .09);
+  border: 2px solid transparent;
+  color: lighten($color: $light-gray, $amount: 50);
+  font-size: 1.05rem;
+  outline: none;
+  padding: 5px;
+  transition: border ease .3s;
+  width: 100%;
+  &:hover{
+    border: 2px solid rgb(63, 139, 211);
+  }
+}
+
+.form__group-input-valid{
+  border: 2px solid $primary;
+  &:hover{
+    border: 2px solid $primary;
+  }
+}
+
+.form__group-input-invalid{
+  border: 2px solid rgb(189, 37, 37);
+  &:hover{
+    border: 2px solid rgb(189, 37, 37);
+  }
+}
+
+.fa{
+  position: absolute;
+  right: 10px;
+  top: 10px
+}
+
+.fa-times-circle{
+  color: rgb(189, 37, 37);
+}
+
+.fa-check-circle{
+  color: $primary;
+}
+
+.form__group-message{
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: rgba($color: white, $alpha: .09);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  color: lighten($color: $light-gray, $amount: 50);
+  height: 120px;
+  resize: none;
+  width: 100%;
+  outline: none;
+  &:hover{
+    border: 2px solid rgb(63, 139, 211);
+  }
+  padding: 5px;
+}
+
+.form__group-message-error{
+  color: rgb(189, 37, 37);
+  font-size: 1.05rem;
+  margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .contact__form-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__form-container{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,17 @@
+@keyframes down-content {
+  from{
+    transform: translateY(-35px);
+  } 
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeHeader {
+  from{
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

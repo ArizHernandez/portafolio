@@ -1,0 +1,50 @@
+.certificates__main-container{
+  margin: 0 auto;
+}
+
+.certificates__content-container{
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: rgba($color: $dark-gray, $alpha: .6);
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate__item-container{
+  align-items: center;
+  background: rgba(235, 235, 235, .6);
+  border-radius: 5px;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.certificate__title{
+  color: $dark-gray;
+  font-size: 1.05rem;
+}
+
+.certificate__year{
+  color: lighten($color: $light-gray, $amount: 10);
+  display: block;
+  margin-top: -5px;
+}
+
+.certificate__link{
+  color: darken($color: $primary, $amount: 5);
+  text-decoration: none;
+  transition: color ease .3s;
+  &:hover{
+    color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.fa-rocket{
+  color: rgb(39, 124, 202);
+}
+
+.certificate__content{
+  margin-left: 10px;
+}

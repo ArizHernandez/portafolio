@@ -26,9 +26,9 @@ export const Portfolio = () => {
                     "value": 3
                 },
                 "links": {
-                  "color": "#575757"
+                  "color": "#666666"
                 },
-                "color": "#3a3a3a"
+                "color": "#4d4d4d"
             },
             "interactivity": {
                 "events": {

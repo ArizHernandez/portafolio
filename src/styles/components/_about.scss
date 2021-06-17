@@ -1,12 +1,16 @@
 .about__main-container{
-  padding: 20px;
+  margin: 20px 0px;
 }
 
 .about__content-container{
-  margin-top: 20px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: rgba($color: #000000, $alpha: .2);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .about__image-container{

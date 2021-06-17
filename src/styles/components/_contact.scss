@@ -5,8 +5,8 @@
 }
 
 .contact__form-container{
-  background-image: url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623810892/guillaume-le-louarn-uC21aXJ7yQs-unsplash_1_lpz9sv.jpg");
-  background-size: cover;
+  background: $dark-gray;
+  backdrop-filter: blur(2px);
   border-radius: 15px;
   box-shadow: 5px 5px 10px $dark-gray;
   margin-top: 25px;

@@ -5,7 +5,7 @@ import { CertificateItem } from './CertificateItem';
 export default function Certificates() {
   return (
     <div className="certificates__main-container" id="certificates">
-      <h3 className="title__content">Certificates</h3>
+      <h3 className="title__content">Courses</h3>
 
       <div className="certificates__content-container mt-3">
         

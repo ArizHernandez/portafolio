@@ -11,8 +11,7 @@ export const About = () => {
           <img
             className="about__image"
             alt="ariz_porfolio_Image"
-            loading="lazy"
-            src="https://res.cloudinary.com/djcs4ctjx/image/upload/v1623708474/PicsArt_06-14-04.06.47_fbryzn.jpg"
+            src="https://res.cloudinary.com/djcs4ctjx/image/upload/v1623895345/PicsArt_06-14-04.06.47_jyb6lp.jpg"
           />
         </div>
         <div className="about__text-content">

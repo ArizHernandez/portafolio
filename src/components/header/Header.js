@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Navbar } from './Navbar';
 
-export const Header = () => {
+export default function Header() {
   return (
     <header className="header__main-container">
       <Navbar />

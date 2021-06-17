@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CertificateItem } from './CertificateItem';
 
-export const Certificates = () => {
+export default function Certificates() {
   return (
     <div className="certificates__main-container" id="certificates">
       <h3 className="title__content">Certificates</h3>

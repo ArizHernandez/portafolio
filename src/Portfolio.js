@@ -1,48 +1,51 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React, { Suspense } from 'react';
 
-import { Header } from './components/header/Header';
-import { About } from './components/about/About';
-import { Projects } from './components/projects/Projects';
-import { Certificates } from './components/certificates/Certificates';
-import { Contact } from './components/contact/Contact';
-import { Footer } from './components/footer/Footer';
-// "color": "#3a3a3a"
+import { Loading } from './components/loading/Loading';
+const Particles     = React.lazy(() => import('react-particles-js'));
+const Header        = React.lazy(() => import('./components/header/Header'));
+const About         = React.lazy(() => import('./components/about/About'));
+const Projects      = React.lazy(() => import('./components/projects/Projects'));
+const Certificates  = React.lazy(() => import('./components/certificates/Certificates'));
+const Contact       = React.lazy(() => import('./components/contact/Contact'));
+const Footer        = React.lazy(() => import('./components/footer/Footer'));
 
 export const Portfolio = () => {
 
   return (
     <>
-      <Particles
-        className="particles"
-        params={{
-          "particles": {
-              "number": {
-                  "value": 25
-              },
-              "size": {
-                  "value": 3
-              },
-              "links": {
-                "color": "#575757"
-              },
-              "color": "#3a3a3a"
-          },
-          "interactivity": {
-              "events": {
-                  "onhover": {
-                      "enable": true,
-                      "mode": "repulse"
-                  }
-              }
-          }
-      }} />
-      <Header />
-      <About />
-      <Projects />
-      <Certificates />
-      <Contact />
-      <Footer /> 
+      <Suspense fallback={<Loading />}> 
+        <Particles
+          style={{Animation: "fadeHeader .4s ease"}}
+          className="particles"
+          params={{
+            "particles": {
+                "number": {
+                    "value": 25
+                },
+                "size": {
+                    "value": 3
+                },
+                "links": {
+                  "color": "#575757"
+                },
+                "color": "#3a3a3a"
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    }
+                }
+            }
+        }} />
+        <Header />
+        <About />
+        <Projects />
+        <Certificates />
+        <Contact />
+        <Footer /> 
+      </Suspense>
     </>
   )
 }

@@ -1,7 +1,7 @@
   import React from 'react'
 import { ProjectCard } from './ProjectCard'
 
-  export const Projects = () => {
+  export default function Projects() {
     return (
       <section className="projects__main-container" id="projects">
         <h3 className="title__content">Projects</h3>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { SocialMediaLink } from './SocialMediaLink'
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <footer className="footer__main-container">
       <div className="footer__content-container">

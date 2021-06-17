@@ -5,7 +5,7 @@ import { sendForm } from '../../helpers/sendForm';
 import { useForm } from '../../hooks/useForm';
 import { Input } from './Input';
 
-export const Contact = () => {
+export default function Contact() {
 
   const [formValue, handleInputChange, reset] = useForm({
     name: "",

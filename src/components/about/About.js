@@ -19,9 +19,9 @@ export const About = () => {
             some about me...
           </p>
           <p className="about__text">
-            Hi, I'm a web developer, I have been studying more to 1 year ago frontend tecnologies.
+            Hi!, My name is Ariz Hernández, I am a web developer, I'm have been studying web technologies more than a year ago.
             I have made some projects you can watch my top 
-            projects <a className="about__link" href="#projects">here</a> or watch 
+            projects <a className="about__link" href="#projects">here</a> or look 
             my <a className="about__link" href="https://github.com/ArizHernandez">github</a> where I have all my projects.
           </p>
         </div>

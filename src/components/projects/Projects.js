@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
-import WOW from 'wowjs';
+import React from 'react';
 
 import { ProjectCard } from './ProjectCard';
 
 export default function Projects() {  
-  useEffect(() => {
-    new WOW.WOW().init();
-  }, [])
-
   return (
-    <section className="projects__main-container wow fadeIn" id="projects">
+    <section className="projects__main-container" id="projects">
       <h3 className="title__content">Projects</h3>
 
       <div className="projects__cards-container mt-3">

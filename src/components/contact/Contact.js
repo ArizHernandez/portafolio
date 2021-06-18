@@ -38,11 +38,11 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact__main-container wow fadeIn" id="contact">
+    <div className="contact__main-container" id="contact">
       <h3 className="title__content mt-3">Contact me</h3>
 
       <form 
-        className="contact__form-container mt-3" 
+        className="contact__form-container wow fadeIn mt-3" 
         id="formContact"
         onSubmit={handleSendMessage}
       >

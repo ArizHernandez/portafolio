@@ -11,7 +11,7 @@ export default function About() {
       
       <h3 className="title__content">About me</h3>
 
-      <div className="about__content-container wow fadeIn">
+      <div className="about__content-container">
         <div className="about__image-container">
           <img
             className="about__image"
@@ -19,7 +19,7 @@ export default function About() {
             src="https://res.cloudinary.com/djcs4ctjx/image/upload/v1623895345/PicsArt_06-14-04.06.47_jyb6lp.jpg"
           />
         </div>
-        <div className="about__text-content">
+        <div className="about__text-content wow fadeInRight">
           <p className="about__text-title">
             some about me...
           </p>

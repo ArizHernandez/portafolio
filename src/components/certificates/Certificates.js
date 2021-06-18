@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
 
 import { CertificateItem } from './CertificateItem';
 
 export default function Certificates() {
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, [])
+  
+
   return (
-    <div className="certificates__main-container" id="certificates">
+    <div className="certificates__main-container wow fadeIn" id="certificates">
       <h3 className="title__content">Courses</h3>
 
       <div className="certificates__content-container mt-3">

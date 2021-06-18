@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
 
 export default function About() {
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, [])
+
   return (
     <section className="about__main-container" id="about">
       
       <h3 className="title__content">About me</h3>
 
-      <div className="about__content-container">
+      <div className="about__content-container wow fadeIn">
         <div className="about__image-container">
           <img
             className="about__image"

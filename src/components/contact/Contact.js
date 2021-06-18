@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Swal from 'sweetalert2';
+import WOW from 'wowjs';
+
+import { Input } from './Input';
+import { useForm } from '../../hooks/useForm';
 import { sendForm } from '../../helpers/sendForm';
 
-import { useForm } from '../../hooks/useForm';
-import { Input } from './Input';
-
 export default function Contact() {
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
 
   const [formValue, handleInputChange, reset] = useForm({
     name: "",
@@ -34,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact__main-container" id="contact">
+    <div className="contact__main-container wow fadeIn" id="contact">
       <h3 className="title__content mt-3">Contact me</h3>
 
       <form 

@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react';
-import WOW from 'wowjs';
+import React from 'react';
 
 export default function About() {
-  useEffect(() => {
-    new WOW.WOW().init();
-  }, [])
-
   return (
     <section className="about__main-container" id="about">
       

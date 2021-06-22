@@ -19,8 +19,8 @@ export default function About() {
             some about me...
           </p>
           <p className="about__text">
-            Hi!, My name is Ariz Hernández, I am a web developer, I'm have been studying web technologies more than a year ago.
-            I have made some projects you can watch my top 
+            Hi!, My name is Ariz Hernández, I am a web developer, I've been studying web technologies more than a year ago.
+            I've made some projects, you can watch my top 
             projects <a className="about__link" href="#projects">here</a> or look 
             my <a className="about__link" href="https://github.com/ArizHernandez">github</a> where I have all my projects.
           </p>

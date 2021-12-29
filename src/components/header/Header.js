@@ -14,9 +14,9 @@ export default function Header() {
           href="https://arizhernandez.github.io/portafolio/assets/CV.pdf"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-primary mt-2"
+          className="btn btn-primary btn-effect mt-2"
         >
-          Dowload CV
+          <span>Dowload CV</span>
         </a>
       </div>
     </header>

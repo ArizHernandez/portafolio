@@ -16,11 +16,11 @@ export default function About() {
         </div>
         <div className="about__text-content wow fadeInRight">
           <p className="about__text-title">
-            some about me...
+            Hello!
           </p>
           <p className="about__text">
-            Hi!, My name is Ariz Hernández, I am a web developer, I've been studying web technologies more than a year ago.
-            I've made some projects, you can watch my top 
+            I'm Ariz Hernández and I am a web developer, I love the web development and the mobile development
+            I've made some projects and you can watch my top 
             projects <a className="about__link" href="#projects">here</a> or look 
             my <a className="about__link" href="https://github.com/ArizHernandez">github</a> where I have all my projects.
           </p>

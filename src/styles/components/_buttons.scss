@@ -1,28 +1,50 @@
-.btn{
+.btn {
   border-radius: 5px;
   border: none;
   cursor: pointer;
   display: inline-block;
-  font-size: .88rem;
+  font-size: 0.88rem;
   outline: none;
   padding: 10px;
   text-decoration: none;
 }
 
-.btn-primary{
+.btn-effect {
+  overflow: hidden;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $primary;
+    top: -70%;
+    left: -70%;
+    transform: rotate(120deg);
+    transition: 0.3s ease-out;
+  }
+  &:hover {
+    &::before {
+      top: 70%;
+      left: 70%;
+    }
+  }
+}
+
+.btn-primary {
   background: $primary;
   color: lighten($color: $primary, $amount: 60);
-  transition: all ease .3s;
-  &:hover{
+  transition: all ease 0.3s;
+  position: relative;
+  &:hover {
     background: lighten($color: $primary, $amount: 60);
     color: $primary;
   }
-  &:disabled{
+  &:disabled {
     background: darken($color: $primary, $amount: 10);
     color: lighten($color: $primary, $amount: 40);
   }
 }
 
-.btn-block{
+.btn-block {
   width: 100%;
 }

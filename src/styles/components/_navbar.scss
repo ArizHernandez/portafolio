@@ -13,11 +13,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-}
-
-.navbar__icon{
-  margin-left: 10px;
-  font-size: 1.5rem
+  span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.33rem;
+    margin-left: 10px;
+  }
 }
 
 .navbar__menu-container{

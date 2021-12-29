@@ -1,18 +1,18 @@
-.projects__main-container{
+.projects__main-container {
   margin: 0px auto;
   width: 90%;
   padding: 20px;
 }
 
-.projects__cards-container{
+.projects__cards-container {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.project__card-container{
-  animation: fadeHeader ease .4s;
-  background-position: center; 
+.project__card-container {
+  animation: fadeHeader ease 0.4s;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 5px;
@@ -22,73 +22,104 @@
   overflow: hidden;
   position: relative;
   width: 265px;
-  &::before{
-    background: rgba($color: #000000, $alpha: .5);
+  &::before {
+    background: rgba($color: #000000, $alpha: 0.5);
     bottom: 0;
-    content: "";
+    content: '';
     height: 100%;
     left: 0;
     position: absolute;
     width: 100%;
   }
-  &:hover{
-    .project__card-content{
+  &:hover {
+    .project__card-content {
       opacity: 1;
     }
-    .project__card-alert{
+    .project__card-alert {
       opacity: 0;
     }
   }
 }
 
-.project__card-alert{
+.project__card-alert {
   border: 2px dotted #f2f2f2;
   color: #f2f2f2;
   left: 15%;
   padding: 5px;
   position: absolute;
   top: 40%;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
-.project__card-content{
-  background: linear-gradient(to bottom, transparent, #969696);
-  backdrop-filter: blur(2px);
+.project__card-content {
   -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: linear-gradient(to bottom, transparent, #969696);
   bottom: 0;
   color: #d1d1d1;
   opacity: 0;
+  padding: 5px;
   position: absolute;
   text-align: center;
-  transition: .6s ease all;
+  transition: 0.6s ease all;
   width: 100%;
-  padding: 5px;
-  h3{
+  h3 {
     font-family: 'PT Sans', sans-serif;
     font-style: initial;
   }
 }
 
-.project__card-links{
+.project__card-links {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
 }
 
-.project__card-link{
-  background: rgba($color: white, $alpha: .2);
+.project__card-link {
+  background: rgba($color: white, $alpha: 0.2);
   border-radius: 5px;
   color: #f2f2f2;
   padding: 5px 10px;
   text-decoration: none;
-  &:nth-child(2){
+  position: relative;
+  overflow: hidden;
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    rect {
+      width: 100%;
+      height: 100%;
+      stroke: #bbbbbb;
+      stroke-width: 8px;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      transition: 0.6s ease all;
+    }
+  }
+  &:nth-child(2) {
     color: rgb(143, 245, 186);
     font-weight: 600;
+    svg {
+      rect{
+        stroke: $primary
+      }
+    }
+  }
+  &:hover {
+    svg {
+      rect {
+        stroke-dashoffset: 0;
+      }
+    }
   }
 }
 
 @media (min-width: 1024px) {
-  .projects__cards-container{
+  .projects__cards-container {
     flex-direction: row;
     justify-content: space-around;
   }

@@ -14,14 +14,13 @@
 }
 
 .about__image-container{
-  border-radius: 50%;
   margin: 10px auto;
   width: 206px;
 }
 
 .about__image{
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba($color: #000000, $alpha: .6);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba($color: #292929, $alpha: .6);
   object-fit: cover;
   width: 100%;
   height: 225px;

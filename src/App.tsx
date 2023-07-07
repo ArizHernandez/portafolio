@@ -1,4 +1,7 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useCallback } from "react";
+
+import { loadFull } from "tsparticles";
+import type { Engine } from "tsparticles-engine";
 
 import { Loading } from "./components/loading/Loading";
 
@@ -13,28 +16,25 @@ const Contact = lazy(() => import("./components/contact/Contact"));
 const Footer = lazy(() => import("./components/footer/Footer"));
 
 export const App = () => {
-  // const particlesInit = useCallback(async (engine: Engine) => {
-  //   console.log(engine);
+  const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(engine);
 
-  //   // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-  //   // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-  //   // starting from v2 you can add only the features you need reducing the bundle size
-  //   await loadFull(engine);
-  // }, []);
-
-  // const particlesLoaded = useCallback(
-  //   async (container: Container | undefined) => {
-  //     await console.log(container);
-  //   },
-  //   []
-  // );
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    await loadFull(engine);
+  }, []);
 
   return (
     <>
       <Suspense fallback={<Loading />}>
         <Particles
           className="particles"
+          id="tsparticles"
+          init={particlesInit}
           options={{
+            preset: "links",
             fpsLimit: 120,
             particles: {
               number: {
@@ -44,9 +44,27 @@ export const App = () => {
                 value: 3,
               },
               links: {
+                enable: true,
                 color: "#666666",
+                collisions: {
+                  enable: true,
+                },
               },
-
+              bounce: {
+                horizontal: {
+                  value: 1,
+                },
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: true,
+                speed: 6,
+                straight: false,
+              },
               color: { value: "#4d4d4d" },
             },
             interactivity: {

@@ -1,10 +1,10 @@
-import React from 'react'
+type Props = {
+  title: string;
+  year: string;
+  url: string;
+};
 
-export const CertificateItem = ({
-  title,
-  year,
-  url
-}) => {
+export const CertificateItem = ({ title, year, url }: Props) => {
   return (
     <div className="certificate__item-container">
       <i className="fas fa-rocket fa-2x"></i>
@@ -13,7 +13,7 @@ export const CertificateItem = ({
         <h3 className="certificate__title">{title}</h3>
         <small className="certificate__year">{year}</small>
         <p>
-          <a 
+          <a
             href={url}
             target="_blank"
             rel="noreferrer"
@@ -24,5 +24,5 @@ export const CertificateItem = ({
         </p>
       </div>
     </div>
-  )
-}
+  );
+};

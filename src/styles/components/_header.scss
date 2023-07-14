@@ -1,6 +1,6 @@
 .header__main-container {
   animation: fadeHeader 0.4s ease;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent),
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), transparent),
     url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-mobile_b7mejm.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 
 @media (min-width: 768px) {
   .header__main-container {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent),
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), transparent),
       url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-desktop_rhaz67.jpg");
   }
 }

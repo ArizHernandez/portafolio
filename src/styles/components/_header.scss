@@ -1,13 +1,19 @@
-.header__main-container{
-  animation: fadeHeader .4s ease;
-  background-image: url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-mobile_b7mejm.jpg");
+.header__main-container {
+  animation: fadeHeader 0.4s ease;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent),
+    url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-mobile_b7mejm.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
   position: relative;
-  &::before{
-    background: linear-gradient(to bottom, rgba(255,255,255, .6), rgba(255,255,255, .2), white);
+  &::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2),
+      white
+    );
     bottom: 0;
     content: "";
     height: 100%;
@@ -17,7 +23,7 @@
   }
 }
 
-.header__title-content{
+.header__title-content {
   left: 0%;
   position: absolute;
   text-align: center;
@@ -25,19 +31,19 @@
   width: 100%;
 }
 
-.header__title-welcome{
+.header__title-welcome {
   color: darken($color: $dark-gray, $amount: 10);
   font-size: 2.33rem;
 }
 
-.header__title-presentation{
+.header__title-presentation {
   color: darken($color: $dark-gray, $amount: 8);
   font-size: 1.33rem;
 }
 
-.header__title-project{
+.header__title-project {
   position: relative;
-  &::before{
+  &::before {
     position: absolute;
     content: "";
     bottom: 5px;
@@ -49,7 +55,8 @@
 }
 
 @media (min-width: 768px) {
-  .header__main-container{
-    background-image: url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-desktop_rhaz67.jpg");
+  .header__main-container {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent),
+      url("https://res.cloudinary.com/djcs4ctjx/image/upload/v1623701759/bg-desktop_rhaz67.jpg");
   }
 }

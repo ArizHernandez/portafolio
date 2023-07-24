@@ -10,19 +10,13 @@ const Header = lazy(() => import("./components/header/Header"));
 const About = lazy(() => import("./components/about/About"));
 const Projects = lazy(() => import("./components/projects/Projects"));
 const Certificates = lazy(
-  () => import("./components/certificates/Certificates")
+  () => import("./components/certifications/Certificates")
 );
 const Contact = lazy(() => import("./components/contact/Contact"));
 const Footer = lazy(() => import("./components/footer/Footer"));
 
 export const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     await loadFull(engine);
   }, []);
 

@@ -7,27 +7,15 @@ export default function Certificates() {
 
       <div className="certificates__content-container mt-3">
         <CertificateItem
-          title="Programación Basica"
-          year="2018"
-          url="https://platzi.com/p/ArizHer/curso/1050-course/diploma/detalle/"
-        />
-
-        <CertificateItem
-          title="Angular: De cero a experto"
-          year="2020"
-          url="https://www.udemy.com/certificate/UC-e8783268-b60c-4fff-a60f-c1a4549f6c6d/"
-        />
-
-        <CertificateItem
           title="JavaScript Moderno"
           year="2020"
           url="https://www.udemy.com/certificate/UC-1e43b5e9-93ed-45b8-9a18-cf452f63d5b8/"
         />
 
         <CertificateItem
-          title="React: De cero a experto"
-          year="2021"
-          url="https://www.udemy.com/certificate/UC-90c95c55-046f-47f3-969c-22088af52724/"
+          title="Angular: De cero a experto"
+          year="2020"
+          url="https://www.udemy.com/certificate/UC-e8783268-b60c-4fff-a60f-c1a4549f6c6d/"
         />
 
         <CertificateItem
@@ -40,6 +28,18 @@ export default function Certificates() {
           title="SQL - The Complete Guide"
           year="2021"
           url="https://www.udemy.com/certificate/UC-62e5bbba-75fa-4222-8e39-5bae1c2b50e8/"
+        />
+
+        <CertificateItem
+          title="Principios SOLID y Clean Code"
+          year="2022"
+          url="https://www.udemy.com/certificate/UC-2aed85ec-1c11-43c8-a51e-82fec7d6dd6c/"
+        />
+
+        <CertificateItem
+          title="React PRO"
+          year="2023"
+          url="https://www.udemy.com/certificate/UC-1dfc0765-77e5-495c-916b-aac9b5c3118b/"
         />
       </div>
     </div>

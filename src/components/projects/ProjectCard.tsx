@@ -2,7 +2,7 @@ type Props = {
   title: string;
   image: string;
   linkSource: string;
-  linkDemo: string;
+  linkDemo?: string;
 };
 
 export const ProjectCard = ({ title, image, linkSource, linkDemo }: Props) => {
@@ -16,28 +16,32 @@ export const ProjectCard = ({ title, image, linkSource, linkDemo }: Props) => {
       <div className="project__card-content">
         <h3>{title}</h3>
         <div className="project__card-links">
-          <a
-            className="project__card-link"
-            rel="noreferrer"
-            target="_blank"
-            href={linkSource}
-          >
-            Source
-            <svg>
-              <rect x="0" y="0" fill="none" />
-            </svg>
-          </a>
-          <a
-            className="project__card-link"
-            rel="noreferrer"
-            target="_blank"
-            href={linkDemo}
-          >
-            Demo
-            <svg>
-              <rect x="0" y="0" fill="none" />
-            </svg>
-          </a>
+          {linkSource ? (
+            <a
+              className="project__card-link"
+              rel="noreferrer"
+              target="_blank"
+              href={linkSource}
+            >
+              Source
+              <svg>
+                <rect x="0" y="0" fill="none" />
+              </svg>
+            </a>
+          ) : null}
+          {linkDemo ? (
+            <a
+              className="project__card-link"
+              rel="noreferrer"
+              target="_blank"
+              href={linkDemo}
+            >
+              Demo
+              <svg>
+                <rect x="0" y="0" fill="none" />
+              </svg>
+            </a>
+          ) : null}
         </div>
       </div>
     </div>

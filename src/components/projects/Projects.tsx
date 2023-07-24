@@ -21,10 +21,9 @@ export default function Projects() {
         />
 
         <ProjectCard
-          title="Todo App"
-          image="https://user-images.githubusercontent.com/37966712/113535268-8d1d3000-9598-11eb-8e80-d2370065a188.png"
+          title="Cinemapedia"
+          image="https://res.cloudinary.com/djcs4ctjx/image/upload/v1690171988/254807013-651aa011-b7ea-40e5-abd3-214a5a695e19_j2spxz.jpg"
           linkSource="https://github.com/ArizHernandez/todo-ngrx"
-          linkDemo="https://arizhernandez.github.io/todo-ngrx/"
         />
       </div>
     </section>

@@ -14,7 +14,7 @@ export const ProjectCard = ({ title, image, linkSource, linkDemo }: Props) => {
       <p className="project__card-alert">Place hover me to view!</p>
 
       <div className="project__card-content">
-        <h3>{title}</h3>
+        <h3>{title.toUpperCase()}</h3>
         <div className="project__card-links">
           {linkSource ? (
             <a

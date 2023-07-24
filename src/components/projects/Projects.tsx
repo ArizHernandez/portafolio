@@ -23,7 +23,7 @@ export default function Projects() {
         <ProjectCard
           title="Cinemapedia"
           image="https://res.cloudinary.com/djcs4ctjx/image/upload/v1690171988/254807013-651aa011-b7ea-40e5-abd3-214a5a695e19_j2spxz.jpg"
-          linkSource="https://github.com/ArizHernandez/todo-ngrx"
+          linkSource="https://github.com/ArizHernandez/cinemapedia"
         />
       </div>
     </section>

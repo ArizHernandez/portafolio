@@ -74,7 +74,7 @@ export const App = () => {
         <Header />
         <About />
         <Projects />
-        <Certificates />
+        {/* <Certificates /> */}
         <Contact />
         <Footer />
       </Suspense>

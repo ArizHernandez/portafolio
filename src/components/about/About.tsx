@@ -8,18 +8,22 @@ export default function About() {
           <img
             className="about__image"
             alt="ariz_porfolio_Image"
-            src="https://res.cloudinary.com/djcs4ctjx/image/upload/v1623895345/PicsArt_06-14-04.06.47_jyb6lp.jpg"
+            src="https://res.cloudinary.com/djcs4ctjx/image/upload/v1770871302/image_quvetf.jpg"
           />
         </div>
         <div className="about__text-content wow fadeInRight">
           <p className="about__text-title">Hello!</p>
           <p className="about__text">
-            Web professional with two years of experience, delighted by the
-            front-end and good practices. I enjoy supporting and contributing.
-            Additionally, I have developed the ability to learn in a self-taught
-            manner, which keeps me constantly up-to-date with the latest in
-            technology.\n I've made some projects and you can watch my top
-            projects{" "}
+            I am a professional with solid experience in the analysis, design,
+            and development of web platforms. Throughout my career, I have
+            participated in diverse projects, applying technical skills to build
+            efficient, user-focused solutions. My approach is to improve the
+            user experience while maintaining a high standard of code quality. I
+            am passionate about self-learning and enjoy continuously growing,
+            both professionally and personally. I am committed to continuous
+            improvement and always look for new opportunities to expand my
+            skills and knowledge.
+            <br /> I've made some projects and you can watch my top projects{" "}
             <a className="about__link" href="#projects">
               here
             </a>{" "}

@@ -9,12 +9,15 @@ export const ProjectCard = ({ title, image, linkSource, linkDemo }: Props) => {
   return (
     <div
       className="project__card-container"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ ["--card-bg" as any]: `url(${image})` }}
+      role="group"
+      tabIndex={0}
     >
       <p className="project__card-alert">Place hover me to view!</p>
 
       <div className="project__card-content">
         <h3>{title.toUpperCase()}</h3>
+
         <div className="project__card-links">
           {linkSource ? (
             <a
@@ -29,6 +32,7 @@ export const ProjectCard = ({ title, image, linkSource, linkDemo }: Props) => {
               </svg>
             </a>
           ) : null}
+
           {linkDemo ? (
             <a
               className="project__card-link"

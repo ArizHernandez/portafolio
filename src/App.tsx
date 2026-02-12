@@ -9,9 +9,9 @@ const Particles = lazy(() => import("react-tsparticles"));
 const Header = lazy(() => import("./components/header/Header"));
 const About = lazy(() => import("./components/about/About"));
 const Projects = lazy(() => import("./components/projects/Projects"));
-const Certificates = lazy(
-  () => import("./components/certifications/Certificates")
-);
+// const Certificates = lazy(
+//   () => import("./components/certifications/Certificates")
+// );
 const Contact = lazy(() => import("./components/contact/Contact"));
 const Footer = lazy(() => import("./components/footer/Footer"));
 
